@@ -204,6 +204,7 @@ import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSetting
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.android.settings.livedisplay.LiveDisplaySettings;
+import ink.kscope.settings.wifi.tether.WifiTetherClientManager;
 
 public class SettingsGateway {
 
@@ -397,6 +398,7 @@ public class SettingsGateway {
             LiveDisplaySettings.class.getName(),
             WirelessDebuggingFragment.class.getName(),
             RunningServices.class.getName()
+            WifiTetherClientManager.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
