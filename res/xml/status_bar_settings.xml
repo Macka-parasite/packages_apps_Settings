@@ -36,6 +36,12 @@
         android:defaultValue="false"/>
 
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="statusbar_colored_icons"
+        android:title="@string/qs_colored_icons_title"
+        android:summary="@string/qs_colored_icons_summary"
+        android:defaultValue="false" />
+
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/status_bar_double_tap_to_sleep_title"
         android:summary="@string/status_bar_double_tap_to_sleep_summary"
@@ -83,11 +89,11 @@
             android:max="100"
             android:min="1" />
 
-        <com.android.settings.custom.preference.SecureSettingSwitchPreference
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="qs_show_data_usage"
             android:title="@string/qs_show_data_usage_title"
             android:summary="@string/qs_show_data_usage_summary"
-            android:defaultValue="true" />
+            android:defaultValue="false" />
     </PreferenceCategory>
 
 </PreferenceScreen>
